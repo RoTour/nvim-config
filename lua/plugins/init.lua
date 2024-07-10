@@ -8,14 +8,23 @@ return {
   },
 
   -- These are some examples, uncomment them if you want to see them work!
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   config = function()
-  --     require("nvchad.configs.lspconfig").defaults()
-  --     require "configs.lspconfig"
-  --   end,
-  -- },
-  --
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup {
+        -- your config goes here
+        -- or just leave it empty :)
+      }
+    end,
+  },
   -- {
   -- 	"williamboman/mason.nvim",
   -- 	opts = {
